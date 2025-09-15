@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dino Nuggets Fan Club</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles for the dino nugget fan page */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FFF0F5; /* Lavender Blush */
+        }
+        .font-bangers {
+            font-family: 'Bangers', cursive;
+        }
+        .text-shadow {
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        .card-hover {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .card-hover:hover {
+            transform: translateY(-10px) rotate(3deg);
+            box-shadow: 0 20px 25px -5px rgba(236, 72, 153, 0.3), 0 10px 10px -5px rgba(236, 72, 153, 0.1);
+        }
+        .nugget-bg {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23fbcfe8' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+    </style>
+</head>
+<body class="text-pink-800 nugget-bg">
+
+    <!-- Header Section -->
+    <header class="bg-pink-400 p-4 md:p-6 text-white shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="font-bangers text-3xl md:text-5xl tracking-wider text-shadow">Dino Nuggets FTW!</h1>
+            <nav class="hidden md:flex space-x-6 font-bold">
+                <a href="#species" class="hover:text-pink-100 transition duration-300">The Species</a>
+                <a href="#gallery" class="hover:text-pink-100 transition duration-300">Gallery</a>
+                <a href="#dip" class="hover:text-pink-100 transition duration-300">Dip Guide</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main class="container mx-auto p-4 md:p-8">
+        <section class="text-center my-12">
+            <div class="bg-white/70 backdrop-blur-sm p-8 rounded-2xl shadow-xl border-4 border-dashed border-pink-300">
+                <h2 class="font-bangers text-5xl md:text-8xl text-pink-500 tracking-wide text-shadow">A Golden-Brown Obsession</h2>
+                <p class="mt-4 text-lg md:text-2xl max-w-2xl mx-auto text-pink-700">Welcome, fellow connoisseur, to the internet's most dazzling shrine dedicated to the culinary kings of the freezer aisle. Prepare for a journey back to the delicious Jurassic!</p>
+            </div>
+        </section>
+
+        <!-- The Species Section -->
+        <section id="species" class="my-20">
+            <h3 class="font-bangers text-4xl md:text-6xl text-center mb-12 text-pink-600 tracking-wider text-shadow">Meet the Nugget Species</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- T-Rex Card -->
+                <div class="bg-white p-6 rounded-2xl shadow-lg border-2 border-pink-200 card-hover">
+                    <h4 class="font-bangers text-3xl text-pink-500">The T-Rex</h4>
+                    <p class="mt-2 text-pink-700">The undisputed king. Known for its powerful flavor and crispy bite. Best dipped head-first into ketchup.</p>
+                </div>
+                <!-- Stegosaurus Card -->
+                <div class="bg-white p-6 rounded-2xl shadow-lg border-2 border-pink-200 card-hover">
+                    <h4 class="font-bangers text-3xl text-fuchsia-500">The Stegosaurus</h4>
+                    <p class="mt-2 text-pink-700">Those back plates are perfect for scooping up extra sauce. A true engineering marvel of the nugget world.</p>
+                </div>
+                <!-- Brontosaurus Card -->
+                <div class="bg-white p-6 rounded-2xl shadow-lg border-2 border-pink-200 card-hover">
+                    <h4 class="font-bangers text-3xl text-pink-600">The Brontosaurus</h4>
+                    <p class="mt-2 text-pink-700">Graceful. Elegant. That long neck provides an excellent handle for precision dipping. A sophisticated choice.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dipping Guide -->
+        <section id="dip" class="my-20 text-center">
+             <div class="bg-white/70 backdrop-blur-sm p-8 rounded-2xl shadow-xl border-4 border-double border-pink-300">
+                <h3 class="font-bangers text-4xl md:text-6xl mb-8 text-pink-600 tracking-wider text-shadow">Ultimate Dip Guide</h3>
+                <ul class="text-left max-w-md mx-auto space-y-4 text-lg">
+                    <li class="flex items-start"><span class="text-2xl mr-3">🥫</span> <strong>Classic Ketchup:</strong> The timeless partner. Reliable, tangy, and always there for you.</li>
+                    <li class="flex items-start"><span class="text-2xl mr-3">🍯</span> <strong>Honey Mustard:</strong> For the nugget enthusiast with a sweet and zesty side.</li>
+                    <li class="flex items-start"><span class="text-2xl mr-3">🤠</span> <strong>BBQ Sauce:</strong> Smoky, bold, and adventurous. A flavor expedition.</li>
+                    <li class="flex items-start"><span class="text-2xl mr-3">🥛</span> <strong>Ranch Dressing:</strong> A creamy, herby delight. Controversial, yet undeniably delicious.</li>
+                </ul>
+             </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-pink-500 text-white p-6 mt-12">
+        <div class="container mx-auto text-center">
+            <p class="font-bangers text-2xl tracking-widest text-shadow">Stay Crispy!</p>
+            <p class="mt-2 text-pink-100">&copy; 2024 Dino Nuggets Fan Club. All Rights Reserved (for nugget enjoyment).</p>
+        </div>
+    </footer>
+
+</body>
+</html>
